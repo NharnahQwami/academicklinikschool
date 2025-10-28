@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academic Klinik - Online School</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="images/logo.jpeg">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <a href="/images/logo.jpeg" class="logo" onclick="navigateTo('home'); return false;">
+                    <span style="padding: 5px 10px; border-radius: 4px; font-weight: bold; color: #1a5f5f;"></span>
+                    Academic Klinik School
+                </a>
+                <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="#" onclick="navigateTo('home'); return false;" class="nav-link active"
+                            data-page="home">Home</a></li>
+                    <li><a href="#" onclick="navigateTo('about'); return false;" class="nav-link"
+                            data-page="about">About</a></li>
+                    <li><a href="#" onclick="navigateTo('programs'); return false;" class="nav-link"
+                            data-page="programs">Programs</a></li>
+                    <li><a href="#" onclick="navigateTo('faculty'); return false;" class="nav-link"
+                            data-page="faculty">Faculty</a></li>
+                    <li><a href="#" onclick="navigateTo('facilities'); return false;" class="nav-link"
+                            data-page="facilities">Facilities</a></li>
+                    <li><a href="#" onclick="navigateTo('contact'); return false;" class="nav-link"
+                            data-page="contact">Contact</a></li>
+                    <li><a href="#" onclick="navigateTo('login'); return false;" class="btn btn-login">Login</a></li>
+                    <li><a href="#" onclick="navigateTo('register'); return false;"
+                            class="btn btn-register">Register</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main id="mainContent">
+        <!-- Home Page -->
+        <div id="home-page" class="page active">
+            <!-- Hero Section -->
+            <section class="hero">
+                <div class="container">
+                    <div class="hero-content">
+                        <h1 class="hero-title">Academic Klinik Online School</h1>
+                        <p class="hero-subtitle">Study at the Comfort of your Home</p>
+                        <p class="hero-description">Quality online education with experienced teachers, flexible
+                            schedules, and comprehensive curriculum for students preparing for their exams.</p>
+                        <div class="hero-buttons">
+                            <button class="btn btn-primary btn-large"
+                                onclick="navigateTo('register'); return false;">Enroll Now</button>
+                            <button class="btn btn-secondary btn-large"
+                                onclick="navigateTo('programs'); return false;">View Programs</button>
+                        </div>
+                        <p class="hero-contact">TEL: 0241981804 / 0564277489</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Why Choose Section -->
+            <section class="features">
+                <div class="container">
+                    <h2 class="section-title">Why Choose Academic Klinik?</h2>
+                    <div class="features-grid">
+                        <div class="feature-card">
+                            <div class="feature-icon">👨‍🏫</div>
+                            <h3>Expert Teachers</h3>
+                            <p>Learn from qualified and experienced educators dedicated to your success.</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">💻</div>
+                            <h3>Online Learning</h3>
+                            <p>Access quality education from anywhere with our comprehensive online platform.</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">📚</div>
+                            <h3>Comprehensive Curriculum</h3>
+                            <p>Wide range of subjects covering all major academic areas and exam requirements.</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">⏰</div>
+                            <h3>Flexible Schedule</h3>
+                            <p>Structured timetable designed for accommodation students' learning needs.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Subjects Section -->
+            <section style="padding: 4rem 0; text-align: center;">
+                <div class="container">
+                    <h2 class="section-title">Our Subjects</h2>
+                    <p class="section-subtitle">We offer a comprehensive range of subjects to prepare you for success
+                    </p>
+                    <div class="subjects-grid">
+                        <span class="subject-tag">Core Mathematics</span>
+                        <span class="subject-tag">English Language</span>
+                        <span class="subject-tag">Integrated Science</span>
+                        <span class="subject-tag">Computing</span>
+                        <span class="subject-tag">Additional Mathematics</span>
+                        <span class="subject-tag">French</span>
+                        <span class="subject-tag">Chemistry</span>
+                        <span class="subject-tag">Biology</span>
+                        <span class="subject-tag">Physics</span>
+                        <span class="subject-tag">Economics</span>
+                        <span class="subject-tag">Business Management</span>
+                        <span class="subject-tag">Geography</span>
+                    </div>
+                    <div class="text-center">
+                        <button class="btn btn-primary" onclick="navigateTo('programs'); return false;">View All
+                            Programs</button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- CTA Section -->
+            <section class="cta">
+                <div class="container">
+                    <div class="cta-content">
+                        <h2>Ready to Start Your Learning Journey?</h2>
+                        <p>Join hundreds of students who are achieving their academic goals with Academic Klinik</p>
+                        <button class="btn btn-primary btn-large"
+                            onclick="navigateTo('register'); return false;">Register Now</button>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- About Page -->
+        <div id="about-page" class="page">
+            <div class="page-header">
+                <div class="container">
+                    <h1>About Academic Klinik</h1>
+                    <p>Dedicated to Excellence in Online Education</p>
+                </div>
+            </div>
+
+            <section style="padding: 4rem 0;">
+                <div class="container">
+                    <div class="about-content">
+                        <div class="about-section">
+                            <h2>Our Mission</h2>
+                            <p>To provide accessible, high-quality online education that empowers students to achieve
+                                their academic goals and reach their full potential from the comfort of their homes.</p>
+                        </div>
+
+                        <div class="about-section">
+                            <h2>Our Vision</h2>
+                            <p>To be the leading online educational institution in Ghana, recognized for excellence in
+                                teaching, innovative learning methods, and outstanding student success rates.</p>
+                        </div>
+
+                        <div class="about-section">
+                            <h2>Our History</h2>
+                            <p>Academic Klinik Online School was established to bridge the gap in quality education
+                                accessibility. We recognized the need for flexible, comprehensive online learning that
+                                doesn't compromise on quality. Our experienced educators and modern teaching methods
+                                have helped countless students achieve their academic dreams.</p>
+                        </div>
+
+                        <div class="about-section">
+                            <h2>Why Choose Us?</h2>
+                            <div class="features-list">
+                                <div class="feature-item">
+                                    <h3>❤️ Focused Learning</h3>
+                                    <p>Structured curriculum designed for exam success</p>
+                                </div>
+                                <div class="feature-item">
+                                    <h3>👨‍🎓 Qualified Teachers</h3>
+                                    <p>Experienced educators passionate about student success</p>
+                                </div>
+                                <div class="feature-item">
+                                    <h3>💻 Modern Platform</h3>
+                                    <p>User-friendly online learning environment</p>
+                                </div>
+                                <div class="feature-item">
+                                    <h3>💰 Affordable Fees</h3>
+                                    <p>Quality education at competitive prices</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Programs Page -->
+        <div id="programs-page" class="page">
+            <div class="page-header">
+                <div class="container">
+                    <h1>Our Academic Programs</h1>
+                    <p>Comprehensive curriculum covering all major subjects</p>
+                </div>
+            </div>
+
+            <section style="padding: 4rem 0;">
+                <div class="container">
+                    <h2 class="section-title">Available Subjects</h2>
+                    <p class="section-subtitle">We offer a wide range of subjects to help you prepare for your
+                        examinations. Choose from 1 to 8 subjects based on your needs.</p>
+
+                    <div class="subjects-list">
+                        <div class="subject-item">
+                            <span class="subject-icon">📐</span>
+                            <span class="subject-name">Core Mathematics</span>
+                        </div>
+                        <div class="subject-item">
+                            <span class="subject-icon">📖</span>
+                            <span class="subject-name">English Language</span>
+                        </div>
+                        <div class="subject-item">
+                            <span class="subject-icon">🔬</span>
+                            <span class="subject-name">Integrated Science</span>
+                        </div>
+                        <div class="subject-item">
+                            <span class="subject-icon">💻</span>
+                            <span class="subject-name">Computer Science</span>
+                        </div>
+                        <div class="subject-item">
+                            <span class="subject-icon">📊</span>
+                            <span class="subject-name">Physics</span>
+                        </div>
+                        <div class="subject-item">
+                            <span class="subject-icon">⚗️</span>
+                            <span class="subject-name">Chemistry</span>
+                        </div>
+                        <div class="subject-item">
+                            <span class="subject-icon">🧬</span>
+                            <span class="subject-name">Biology</span>
+                        </div>
+                        <div class="subject-item">
+                            <span class="subject-icon">🇫🇷</span>
+                            <span class="subject-name">French</span>
+                        </div>
+                        <div class="subject-item">
+                            <span class="subject-icon">💼</span>
+                            <span class="subject-name">Business Management</span>
+                        </div>
+                        <div class="subject-item">
+                            <span class="subject-icon">💰</span>
+                            <span class="subject-name">Economics</span>
+                        </div>
+                        <div class="subject-item">
+                            <span class="subject-icon">🌍</span>
+                            <span class="subject-name">Geography</span>
+                        </div>
+                        <div class="subject-item">
+                            <span class="subject-icon">➕</span>
+                            <span class="subject-name">Additional Mathematics</span>
+                        </div>
+                    </div>
+
+                    <div class="fee-structure">
+                        <h2 class="section-title">Fee Structure</h2>
+                        <p class="section-subtitle">Our affordable fee structure based on the number of subjects:</p>
+                        <div class="fees-grid">
+                            <div class="fee-card">
+                                <div class="fee-subjects">8 Subjects</div>
+                                <div class="fee-amount">GH₵ 700.00</div>
+                            </div>
+                            <div class="fee-card">
+                                <div class="fee-subjects">7 Subjects</div>
+                                <div class="fee-amount">GH₵ 650.00</div>
+                            </div>
+                            <div class="fee-card">
+                                <div class="fee-subjects">6 Subjects</div>
+                                <div class="fee-amount">GH₵ 600.00</div>
+                            </div>
+                            <div class="fee-card">
+                                <div class="fee-subjects">5 Subjects</div>
+                                <div class="fee-amount">GH₵ 550.00</div>
+                            </div>
+                            <div class="fee-card">
+                                <div class="fee-subjects">4 Subjects</div>
+                                <div class="fee-amount">GH₵ 450.00</div>
+                            </div>
+                            <div class="fee-card">
+                                <div class="fee-subjects">3 Subjects</div>
+                                <div class="fee-amount">GH₵ 400.00</div>
+                            </div>
+                            <div class="fee-card">
+                                <div class="fee-subjects">2 Subjects</div>
+                                <div class="fee-amount">GH₵ 300.00</div>
+                            </div>
+                            <div class="fee-card">
+                                <div class="fee-subjects">1 Subject</div>
+                                <div class="fee-amount">GH₵ 200.00</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cta-box">
+                        <h3>Ready to Enroll?</h3>
+                        <p>Start your academic journey with us today</p>
+                        <button class="btn btn-primary btn-large"
+                            onclick="navigateTo('register'); return false;">Register Now</button>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Faculty Page -->
+        <div id="faculty-page" class="page">
+            <div class="page-header">
+                <div class="container">
+                    <h1>Our Faculty</h1>
+                    <p>Meet our dedicated team of educators</p>
+                </div>
+            </div>
+
+            <section style="padding: 4rem 0;">
+                <div class="container">
+                    <p style="text-align: center; color: #666;">Faculty information will be available soon.</p>
+                </div>
+            </section>
+        </div>
+
+        <!-- Facilities Page -->
+        <div id="facilities-page" class="page">
+            <div class="page-header">
+                <div class="container">
+                    <h1>Our Facilities</h1>
+                    <p>Modern infrastructure for quality online education</p>
+                </div>
+            </div>
+
+            <section style="padding: 4rem 0;">
+                <div class="container">
+                    <div class="facilities-grid">
+                        <div class="facility-card">
+                            <div class="facility-icon">💻</div>
+                            <div class="facility-info">
+                                <h3>Online Learning Platform</h3>
+                                <p>State-of-the-art digital platform for seamless online education</p>
+                            </div>
+                        </div>
+                        <div class="facility-card">
+                            <div class="facility-icon">📚</div>
+                            <div class="facility-info">
+                                <h3>Digital Library</h3>
+                                <p>Extensive collection of digital resources and learning materials</p>
+                            </div>
+                        </div>
+                        <div class="facility-card">
+                            <div class="facility-icon">🎥</div>
+                            <div class="facility-info">
+                                <h3>Video Conferencing</h3>
+                                <p>High-quality video classes for interactive learning</p>
+                            </div>
+                        </div>
+                        <div class="facility-card">
+                            <div class="facility-icon">✏️</div>
+                            <div class="facility-info">
+                                <h3>Assessment Tools</h3>
+                                <p>Comprehensive testing and evaluation systems</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Contact Page -->
+        <div id="contact-page" class="page">
+            <div class="page-header">
+                <div class="container">
+                    <h1>Contact Us</h1>
+                    <p>Get in touch with us</p>
+                </div>
+            </div>
+
+            <section style="padding: 4rem 0;">
+                <div class="container">
+                    <div class="contact-grid">
+                        <div class="contact-info-section">
+                            <h2>Get In Touch</h2>
+                            <p>Have questions? We'd love to hear from you. Send us a message and we'll respond as soon
+                                as possible.</p>
+
+                            <div class="contact-details">
+                                <div class="contact-item">
+                                    <div class="contact-icon">📞</div>
+                                    <div>
+                                        <h4>Phone</h4>
+                                        <p>0241981804</p>
+                                        <p>0564277489</p>
+                                    </div>
+                                </div>
+                                <div class="contact-item">
+                                    <div class="contact-icon">✉️</div>
+                                    <div>
+                                        <h4>Email</h4>
+                                        <p><a href="mailto:info@academicklinikschool.com"
+                                                class="contact-email">info@academicklinikschool.com</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <form class="contact-form" id="contactForm">
+                                <div class="form-group">
+                                    <label for="fullName">Full Name *</label>
+                                    <input type="text" id="fullName" name="fullName" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Email Address *</label>
+                                    <input type="email" id="email" name="email" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="phone">Phone Number</label>
+                                    <input type="tel" id="phone" name="phone">
+                                </div>
+                                <div class="form-group">
+                                    <label for="subject">Subject *</label>
+                                    <input type="text" id="subject" name="subject" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="message">Message *</label>
+                                    <textarea id="message" name="message" rows="5" required></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary btn-large">Send Message</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Login Page -->
+        <div id="login-page" class="page">
+            <div class="page-header">
+                <div class="container">
+                    <h1>Login</h1>
+                    <p>Access your account</p>
+                </div>
+            </div>
+
+            <section style="padding: 4rem 0;">
+                <div class="container">
+                    <div style="max-width: 500px; margin: 0 auto;">
+                        <form class="contact-form" id="loginForm">
+                            <div class="form-group">
+                                <label for="loginEmail">Email Address *</label>
+                                <input type="email" id="loginEmail" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="loginPassword">Password *</label>
+                                <input type="password" id="loginPassword" name="password" required>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-large" style="width: 100%;">Login</button>
+                        </form>
+                        <p style="text-align: center; margin-top: 1.5rem;">
+                            Don't have an account? <a href="#" onclick="navigateTo('register'); return false;"
+                                style="color: #1a5f5f; font-weight: 600;">Register here</a>
+                        </p>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Register Page -->
+        <div id="register-page" class="page">
+            <div class="page-header">
+                <div class="container">
+                    <h1>Register</h1>
+                    <p>Choose your registration type</p>
+                </div>
+            </div>
+
+            <section style="padding: 4rem 0;">
+                <div class="container">
+                    <div
+                        style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; max-width: 800px; margin: 0 auto;">
+                        <div
+                            style="background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); text-align: center;">
+                            <div style="font-size: 3rem; margin-bottom: 1rem;">👨‍🎓</div>
+                            <h3 style="color: #1a5f5f; margin-bottom: 1rem;">Student Registration</h3>
+                            <p style="margin-bottom: 1.5rem;">Register as a student to access our online courses and
+                                learning materials.</p>
+                            <button class="btn btn-primary"
+                                onclick="alert('Student registration form would open here'); return false;">Register as
+                                Student</button>
+                        </div>
+                        <div
+                            style="background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); text-align: center;">
+                            <div style="font-size: 3rem; margin-bottom: 1rem;">💰</div>
+                            <h3 style="color: #1a5f5f; margin-bottom: 1rem;">Affiliate Registration</h3>
+                            <p style="margin-bottom: 1.5rem;">Refer other students to us and get rewarded.</p>
+                            <button class="btn btn-primary"
+                                onclick="alert('Affiliate registration form would open here'); return false;">Register
+                                as Affiliate</button>
+                        </div>
+                    </div>
+                    <p style="text-align: center; margin-top: 2rem;">
+                        Already have an account? <a href="#" onclick="navigateTo('login'); return false;"
+                            style="color: #1a5f5f; font-weight: 600;">Login here</a>
+                    </p>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>Academic Klinik</h3>
+                    <p>Study at the Comfort of your Home.</p>
+                    <div class="footer-logo">
+                        <span
+                            style="padding: 10px 15px; border-radius: 4px; font-weight: bold; color: #1a5f5f; display: inline-block;"></span>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#" onclick="navigateTo('about'); return false;">About Us</a></li>
+                        <li><a href="#" onclick="navigateTo('programs'); return false;">Programs</a></li>
+                        <li><a href="#" onclick="navigateTo('faculty'); return false;">Faculty</a></li>
+                        <li><a href="#" onclick="navigateTo('contact'); return false;">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>For Students</h4>
+                    <ul>
+                        <li><a href="#" onclick="navigateTo('register'); return false;">Register</a></li>
+                        <li><a href="#" onclick="navigateTo('login'); return false;">Student Login</a></li>
+                        <li><a href="#" onclick="navigateTo('programs'); return false;">Course Catalog</a></li>
+                        <li><a href="#" onclick="navigateTo('contact'); return false;">Support</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact Us</h4>
+                    <ul class="contact-info">
+                        <li>📞 0241981804</li>
+                        <li>📞 0564277489</li>
+                        <li>✉️ <a href="mailto:info@academicklinikschool.com">info@academicklinikschool.com</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 Academic Klinik Online School. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
