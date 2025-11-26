@@ -38,8 +38,8 @@
                             data-page="facilities">Facilities</a></li>
                     <li><a href="#" onclick="navigateTo('contact'); return false;" class="nav-link"
                             data-page="contact">Contact</a></li>
-                    <li><a href="#" onclick="navigateTo('login'); return false;" class="btn btn-login">Login</a></li>
-                    <li><a href="#" onclick="navigateTo('register'); return false;"
+                    <li><a href="https://sms.academicklinikschool.edu.gh/login" class="btn btn-login">Login</a></li>
+                    <li><a href="https://sms.academicklinikschool.edu.gh/student/register"
                             class="btn btn-register">Register</a></li>
                 </ul>
             </div>
@@ -59,11 +59,17 @@
                         <p class="hero-description">Quality online education with experienced teachers, flexible
                             schedules, and comprehensive curriculum for students preparing for their exams.</p>
                         <div class="hero-buttons">
-                            <button class="btn btn-primary btn-large"
-                                onclick="navigateTo('register'); return false;">Enroll Now</button>
+                            <a class="btn btn-primary btn-large"
+                               href="https://sms.academicklinikschool.edu.gh/student/register">
+                                Enroll Now
+                            </a>
+                            
                             <button class="btn btn-secondary btn-large"
-                                onclick="navigateTo('programs'); return false;">View Programs</button>
+                                onclick="navigateTo('programs'); return false;">
+                                View Programs
+                            </button>
                         </div>
+
                         <p class="hero-contact">TEL: +233530429588</p>
                     </div>
                 </div>
@@ -131,8 +137,11 @@
                     <div class="cta-content">
                         <h2>Ready to Start Your Learning Journey?</h2>
                         <p>Join hundreds of students who are achieving their academic goals with Academic Klinik</p>
-                        <button class="btn btn-primary btn-large"
-                            onclick="navigateTo('register'); return false;">Register Now</button>
+                        <a class="btn btn-primary btn-large"
+                           href="https://sms.academicklinikschool.edu.gh/student/register">
+                            Register Now
+                        </a>
+
                     </div>
                 </div>
             </section>
@@ -332,9 +341,11 @@
                     <div class="cta-box">
                         <h3>Ready to Enroll?</h3>
                         <p>Start your academic journey with us today</p>
-                        <button class="btn btn-primary btn-large"
-                            onclick="navigateTo('register'); return false;">Register Now</button>
-                    </div>
+                        <a class="btn btn-primary btn-large"
+                           href="https://sms.academicklinikschool.edu.gh/student/register">
+                            Register Now
+                        </a>
+
                 </div>
             </section>
         </div>
@@ -364,7 +375,7 @@
                             <div class="faculty-info">
                                 <h3>Eric Twene</h3>
                                 <p class="faculty-title">Dean and Board Member</p>
-                                <p class="faculty-description">Leading the academic vision with extensive experience in institutional management and educational excellence.</p>
+                                <p class="faculty-description">Guiding the academic vision through leadership and experience in institutional management and educational excellence.</p>
                             </div>
                         </div>
 
@@ -522,37 +533,7 @@
             </section>
         </div>
 
-        <!-- Login Page -->
-        <div id="login-page" class="page">
-            <div class="page-header">
-                <div class="container">
-                    <h1>Login</h1>
-                    <p>Access your account</p>
-                </div>
-            </div>
 
-            <section style="padding: 4rem 0;">
-                <div class="container">
-                    <div style="max-width: 500px; margin: 0 auto;">
-                        <form class="contact-form" id="loginForm">
-                            <div class="form-group">
-                                <label for="loginEmail">Email Address *</label>
-                                <input type="email" id="loginEmail" name="email" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="loginPassword">Password *</label>
-                                <input type="password" id="loginPassword" name="password" required>
-                            </div>
-                            <button type="submit" class="btn btn-primary btn-large" style="width: 100%;">Login</button>
-                        </form>
-                        <p style="text-align: center; margin-top: 1.5rem;">
-                            Don't have an account? <a href="#" onclick="navigateTo('register'); return false;"
-                                style="color: #1a5f5f; font-weight: 600;">Register here</a>
-                        </p>
-                    </div>
-                </div>
-            </section>
-        </div>
 
         <!-- Register Page -->
         <div id="register-page" class="page">
@@ -567,34 +548,41 @@
                 <div class="container">
                     <div
                         style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; max-width: 800px; margin: 0 auto;">
+                        
                         <div
                             style="background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); text-align: center;">
                             <div style="font-size: 3rem; margin-bottom: 1rem;">👨‍🎓</div>
                             <h3 style="color: #1a5f5f; margin-bottom: 1rem;">Student Registration</h3>
                             <p style="margin-bottom: 1.5rem;">Register as a student to access our online courses and
                                 learning materials.</p>
-                            <button class="btn btn-primary"
-                                onclick="alert('Student registration form would open here'); return false;">Register as
-                                Student</button>
+                            <a href="https://sms.academicklinikschool.edu.gh/student/register" class="btn btn-primary">
+                                Register as Student
+                            </a>
                         </div>
+
                         <div
                             style="background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); text-align: center;">
                             <div style="font-size: 3rem; margin-bottom: 1rem;">💰</div>
                             <h3 style="color: #1a5f5f; margin-bottom: 1rem;">Affiliate Registration</h3>
                             <p style="margin-bottom: 1.5rem;">Refer other students to us and get rewarded.</p>
                             <button class="btn btn-primary"
-                                onclick="alert('Affiliate registration form would open here'); return false;">Register
-                                as Affiliate</button>
+                                onclick="alert('Affiliate registration form would open here'); return false;">
+                                Register as Affiliate
+                            </button>
                         </div>
                     </div>
+
                     <p style="text-align: center; margin-top: 2rem;">
-                        Already have an account? <a href="#" onclick="navigateTo('login'); return false;"
-                            style="color: #1a5f5f; font-weight: 600;">Login here</a>
+                        Already have an account?
+                        <a href="https://sms.academicklinikschool.edu.gh/login"
+                            style="color: #1a5f5f; font-weight: 600;">
+                            Login here
+                        </a>
                     </p>
                 </div>
             </section>
         </div>
-    </main>
+
 
     <!-- Footer -->
     <footer class="footer">
@@ -619,8 +607,8 @@
                 <div class="footer-col">
                     <h4>For Students</h4>
                     <ul>
-                        <li><a href="#" onclick="navigateTo('register'); return false;">Register</a></li>
-                        <li><a href="#" onclick="navigateTo('login'); return false;">Student Login</a></li>
+                        <li><a href="https://sms.academicklinikschool.edu.gh/student/register">Register</a></li>
+                        <li><a href="https://sms.academicklinikschool.edu.gh/login">Student Login</a></li>
                         <li><a href="#" onclick="navigateTo('programs'); return false;">Course Catalog</a></li>
                         <li><a href="#" onclick="navigateTo('contact'); return false;">Support</a></li>
                     </ul>
