@@ -70,3 +70,5 @@ if (loginForm) {
 document.addEventListener("DOMContentLoaded", () => {
   navigateTo("home")
 })
+
+// Additional updates can be added here if necessary
